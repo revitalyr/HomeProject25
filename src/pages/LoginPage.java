@@ -35,7 +35,7 @@ public class LoginPage extends ParentPage {
     public void clickButton2Enter() {
         action.ClickToButton(enterButton2);
     }
-// 
+//
 //    public void System(String login, String password) {
 //        action.ClickToButton(enterButton);
 //        action.InputText(name, login);
