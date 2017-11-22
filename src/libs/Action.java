@@ -20,7 +20,7 @@ public class Action {
             inputElement.clear();
             inputElement.sendKeys(textValue);
             log.info("'" + textValue + "' Text is inputed");
-            System.out.println("'" + textValue + "' Text is inputed into " + fieldName);
+            //System.out.println("'" + textValue + "' Text is inputed into " + fieldName);
         } catch (Exception e) {
             log.error("Fail" + e);
         }
