@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.seleniumhq.selenium:selenium-server:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-server/unknown/selenium-server-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-server/unknown/selenium-server-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-server/unknown/selenium-server-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

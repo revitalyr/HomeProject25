@@ -3,6 +3,7 @@ import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import pages.LoginPage;
 
 import org.apache.log4j.Logger;
@@ -10,7 +11,12 @@ import org.apache.log4j.Logger;
 public class TestHome {
     @Test
     public void TestHome() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "D:\\java\\chromedriver.exe");
+        String driver_path = System.getenv("WEB_DRIVER_BIN_PATH");
+
+        if((driver_path==null) || driver_path.isEmpty())
+            throw new IllegalArgumentException("You have to define the environment variable WEB_DRIVER_BIN_PATH -> Run.EditConfigurations...->Environment Variables (instead of use System.setProperty(...))");
+
+        System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY, driver_path);
 
         WebDriver driver = new ChromeDriver();
         LoginPage loginPage = new LoginPage(driver);
